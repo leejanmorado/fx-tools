@@ -167,7 +167,10 @@ const MainLayout = ({ children }: Props): JSX.Element => {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title='Open settings'>
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
+                  <Avatar
+                    alt='Kiyotaka Ayanokoji'
+                    src='https://i.pinimg.com/736x/a6/aa/a3/a6aaa3f95d1da087d34cc3ae87bb2342.jpg'
+                  />
                 </IconButton>
               </Tooltip>
               <Menu
@@ -201,7 +204,9 @@ const MainLayout = ({ children }: Props): JSX.Element => {
           </Toolbar>
         </Box>
       </AppBar>
-      <Box pt={20} px={4} pb={4}>{children}</Box>
+      <Box pt={20} px={4} pb={4}>
+        {children}
+      </Box>
     </>
   );
 };
